@@ -2,5 +2,5 @@
 
 cmd to run and generate report
 ~~~
-robot -d results tests/login.robot
+robot -d results path_to_test_file
 ~~~
