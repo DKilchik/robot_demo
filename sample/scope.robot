@@ -18,7 +18,7 @@ ${BROWSER}  Chrome
 Verify Successful Login to the-internet.herokuapp
     [documentation]  This test case verifies that user is able to successfully Login to the-internet.herokuapp
     [tags]  Smoke
-    Wait Until Element Is Visible  id:username  timeout=5
+    Wait Until Element Is Visible  ${UsernameFld}  timeout=5
     Input Text  ${UsernameFld}  ${USERNAME}
     Input Password  ${PasswordFld}  ${PASSWORD}
     Click Element  ${SubmitBtn}
