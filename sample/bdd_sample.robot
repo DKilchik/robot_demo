@@ -1,5 +1,5 @@
 ### Documentation
-### https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#creating-user-keywords
+### https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#toc-entry-252
 
 *** Settings ***
 Documentation  Login Functionality
@@ -8,12 +8,13 @@ Resource  ../resources/configuration/config.robot
 Resource  ../resources/driver_factory/driver_factory.robot
 Variables  ../resources/page_object/locators/locators.py
 Test Setup  Run keywords
-...  Opening browser
+...  Opening browser  ${URL}
 ...  AND  Wait until Login Page is loaded
 Test Teardown  Closing browser
 
 
 *** Variables ***
+${URL}  https://the-internet.herokuapp.com/login
 
 
 *** Test Cases ***

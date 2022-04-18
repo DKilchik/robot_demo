@@ -8,9 +8,10 @@ ${URL}  https://the-internet.herokuapp.com/login
 
 *** Keywords ***
 
-#  FIXME create a more flexible structure which provides the ability to pass env as keyword args
+
 Opening browser
-    Open browser  ${URL}  ${BROWSER}
+    [Arguments]  ${url}=${URL}  ${browser}=${BROWSER}
+    Open browser  ${url}  ${browser}
     Maximize Browser Window
 
 
