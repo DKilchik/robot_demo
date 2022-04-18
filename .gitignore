@@ -6,3 +6,4 @@ results/
 **draft**
 output/
 downloads/
+__pycache__/
